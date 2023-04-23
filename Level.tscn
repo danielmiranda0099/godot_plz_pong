@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 960, 10 )
@@ -7,7 +9,7 @@ extents = Vector2( 960, 10 )
 extents = Vector2( 10, 540 )
 
 [node name="Level" type="Node2D"]
-position = Vector2( 0, -6 )
+position = Vector2( -1, 0 )
 
 [node name="Pared Superior" type="StaticBody2D" parent="."]
 
@@ -32,3 +34,6 @@ shape = SubResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arco Derecha"]
 position = Vector2( 1930, 540 )
 shape = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 50, 460 )
