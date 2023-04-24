@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 960, 10 )
@@ -24,20 +25,24 @@ shape = SubResource( 1 )
 position = Vector2( 960, 1090 )
 shape = SubResource( 1 )
 
-[node name="Arco Izquierda" type="Area2D" parent="."]
+[node name="Arco Player" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arco Izquierda"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arco Player"]
 position = Vector2( -10, 540 )
 shape = SubResource( 2 )
 
-[node name="Arco Derecha" type="Area2D" parent="."]
+[node name="Arco Enemy" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arco Derecha"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arco Enemy"]
 position = Vector2( 1930, 540 )
 shape = SubResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 50, 460 )
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1870, 460 )
+script = ExtResource( 3 )
 
 [node name="Ball" parent="." instance=ExtResource( 2 )]
 position = Vector2( 884.77, 518.495 )
