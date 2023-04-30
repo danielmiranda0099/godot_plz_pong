@@ -23,3 +23,4 @@ func _physics_process(delta):
 	
 	if collide:
 		direction = direction.bounce(collide.normal)
+		$AudioCollision.play()

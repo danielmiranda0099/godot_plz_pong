@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SPRTField_Balloon against wall 1 (ID 1825)_BSB.wav-aa39ae09c9c6b1202b85f670ad860ff1.sample"
+
+[deps]
+
+source_file="res://Audio/SPRTField_Balloon against wall 1 (ID 1825)_BSB.wav"
+dest_files=[ "res://.import/SPRTField_Balloon against wall 1 (ID 1825)_BSB.wav-aa39ae09c9c6b1202b85f670ad860ff1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
